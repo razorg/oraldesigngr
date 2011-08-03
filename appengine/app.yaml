@@ -1,10 +1,7 @@
-application: eurasia-fashion
+application: oraldesigngr
 version: 1
 runtime: python
 api_version: 1
-
-derived_file_type:
-- python_precompiled
 
 builtins:
 - appstats: on
@@ -13,18 +10,6 @@ builtins:
 
 inbound_services:
 - warmup
-
-error_handlers:
-- file: templates/error_handlers/default_error.html
-
-- error_code: over_quota
-  file: templates/error_handlers/over_quota.html
-
-- error_code: dos_api_denial
-  file: templates/error_handlers/dos_api_denial.html
-
-- error_code: timeout
-  file: templates/error_handlers/timeout.html
 
 handlers:
 - url: /favicon\.ico
@@ -35,6 +20,10 @@ handlers:
 - url: /robots\.txt
   static_files: static/robots.txt
   upload: static/robots.txt
+
+- url: /crossdomain.xml
+  static_files: static/crossdomain.xml
+  upload: static/crossdomain.xml
 
 - url: /static
   static_dir: static

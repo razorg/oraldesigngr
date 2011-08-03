@@ -9,5 +9,4 @@ current_path = os.path.abspath(os.path.dirname(__file__))
 # and optionally to lib/dist.zip, loaded using zipimport.
 sys.path[0:0] = [
     os.path.join(current_path, 'lib'),
-    os.path.join(current_path, 'lib', 'dist'),
 ]
