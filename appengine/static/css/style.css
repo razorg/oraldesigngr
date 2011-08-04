@@ -102,16 +102,29 @@ body {
 header {
   text-align: center;
   margin: 0 20em;
-  padding: 1em 0;
 }
 
-.header-title {
-  padding-bottom: 0.1em;
+#main {
+  width: 100%;
+}
+
+#lips {
+  width: 80.9486166%;
+  height: 235px;
+  margin: 0 auto;
+  box-shadow: 0px 0px 15px 7px rgba(0,0,0,0.33);
+}
+
+#header-title {
+  position: relative;
+  bottom: 0.1em;
+  padding-bottom: 0.05em;
   font-size: 10em;
   font-weight: bold;
   font-family: 'Dancing Script';
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.33);
   color: #243748;
+  line-height: 1.2em;
 }
 
 /* END MY STYLES */
