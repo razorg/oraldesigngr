@@ -1,6 +1,13 @@
 # -*- coding: utf-8 -*-
-import os
-import set_sys_path
+import os, sys
+
+current_path = os.path.abspath(os.path.dirname(__file__))
+
+# Add lib as primary libraries directory, with fallback to lib/dist
+# and optionally to lib/dist.zip, loaded using zipimport.
+sys.path[0:0] = [
+    os.path.join(current_path, 'lib'),
+]
 
 import webapp2
 from config import config

@@ -95,12 +95,35 @@ html {
 body {
   height: 100%;
   width: 100%;
-  background: #3c5a76 url('/static/images/status_bg.png') no-repeat center;
 }
 
-header {
+#header-upper {
+  height: 10em;
+}
+
+#header-nav {
+  width: 100%;
   text-align: center;
-  margin: 0 20em;
+  background-color: black;
+}
+
+#header-nav ul {
+}
+
+#header-nav li {
+  display: inline-block;
+  border-right: 2px solid red;
+  padding: 0 2em;
+  margin: 0.4em 0;
+}
+
+#header-nav li.header-nav-last {
+  border-right: none;
+}
+
+#header-nav a {
+  text-decoration: none;
+  color: white;
 }
 
 #container {
@@ -109,63 +132,30 @@ header {
 
 #main {
   width: 100%;
-  color: white;
+  background-color: black;
+  margin-top: 1em;
 }
 
-#main {
-  width: 90%;
+#main-inner {
+  width: 92%;
+  padding: 1em;
   margin: 0 auto;
-  -webkit-border-radius: 10px 10px 0 0;
-  box-shadow: 0px 0px 15px 7px rgba(0,0,0,0.33);
-  background-color: rgba(30, 30, 30, 0.7);
-  color: white;
-  min-height: 50%;
 }
 
-#lips {
-  width: 850px;
-  height: 195px;
-  margin: 0 auto;
-  box-shadow: 0px 0px 15px 7px rgba(0,0,0,0.33);
-  background-color: rgba(0, 0, 0, 0.5);
+#main-border-dashed {
+  border-top: 2px dashed #7F7F7F;
+  border-bottom: 2px dashed #7F7F7F;
+  padding: 1em 0;
 }
 
-#header-title {
-  position: relative;
-  bottom: 0.1em;
-  padding-bottom: 0.05em;
-  font-size: 10em;
-  font-weight: bold;
-  font-family: 'Dancing Script';
-  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.33);
-  color: #243748;
-  line-height: 1.2em;
-}
-
-/* BEGIN NAV */
-#nav-main ul {
-  background-image: -webkit-gradient(linear,
-    left top,
-    left bottom,
-    color-stop(0, #7DAAD3),
-    color-stop(1, #4B81B3)
-  );
-  border-radius: 10px 10px 0 0;
-}
-
-#nav-main ul li {
-  display: block;
-  float: left;
-}
-
-#nav-main a {
+#main-border-gray {
+  border: 1em solid #2D2D2D;
+  background-color: white;
   color: black;
-  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.33);
-  display: inline-block;
-  padding: 0.7em;
-  text-decoration: none;
-  font-family: Verdana;
-  font-size: 1.5em;
+}
+
+#main-content {
+  padding: 1em;
 }
 
 /* END MY STYLES */
