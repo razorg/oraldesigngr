@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-
+from handlers.handlers import Root
 routes = [
-    ('/', 'handlers.handlers.Root')
+    ('/', Root)
 ]
