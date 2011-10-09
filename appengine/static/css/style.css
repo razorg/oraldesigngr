@@ -126,6 +126,10 @@ body {
   color: white;
 }
 
+#header-nav a:hover {
+  color: red;
+}
+
 #container {
   height: 100%;
 }
@@ -150,12 +154,32 @@ body {
 
 #main-border-gray {
   border: 1em solid #2D2D2D;
+  margin: 0 1.5em;
   background-color: white;
   color: black;
 }
 
 #main-content {
   padding: 1em;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+
+#elitis {
+  width: 22.1em;
+  margin: 0 auto;
+  margin-bottom: 2em;
+}
+
+.italic {
+  font-style: italic;
 }
 
 /* END MY STYLES */
